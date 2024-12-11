@@ -14,7 +14,7 @@
   <h3 align="center">A Collaborative LiveDocs</h3>
 
    <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
+     Builtin project just replicate the repo and thanks to <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube.You can also Join the JSM family!
     </div>
 </div>
 
@@ -38,7 +38,7 @@ If you prefer visual learning, this is the perfect resource for you. Follow our 
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Built with Next.js to handle the user interface, Liveblocks for real-time features and styled with TailwindCSS, LiveDocs is a clone of Goole Docs. The primary goal is to demonstrate the developer's skills in realtime enviroment that creates a lasting impact.
+Built with Next.js to handle the user interface, Liveblocks for real-time features and styled with TailwindCSS, Collabify is a clone of Google Docs. The primary goal is to demonstrate the developer's skills in realtime enviroment that creates a lasting impact.
 
 If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+** members. It's a place where people help each other out.
 
@@ -87,14 +87,14 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-**Cloning the Repository**
+**Step 1: Cloning the Repository**
 
 ```bash
 git clone https://github.com/adrianhajdin/collaborative-editor.git
 cd collaborative-editor
 ```
 
-**Installation**
+**Step 2: Installation**
 
 Install the project dependencies using npm:
 
@@ -102,23 +102,25 @@ Install the project dependencies using npm:
 npm install
 ```
 
-**Set Up Environment Variables**
+**Step 3: Set Up Environment Variables**
 
-Create a new file named `.env` in the root of your project and add the following content:
+Create a new file named `.env.local` in the root (just right click on "Collaborative-Editor" folder, then click on "New File") of your project and add the following content:
 
 ```env
 #Clerk
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=(#placeholder i.e :your "Clerk publishable key" will be pasted here) 
+CLERK_SECRET_KEY=(#placeholder i.e :your "CLERK_SECRET_KEY" will be pasted here) 
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in (no changes needed)
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up (no changes needed)
 
 #Liveblocks
-NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY=
-LIVEBLOCKS_SECRET_KEY=
+NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY=(#placeholder i.e :your "PUBLIC_KEY" will be pasted here)
+LIVEBLOCKS_SECRET_KEY=(#placeholder i.e :your "SECRET_KEY" will be pasted here)
 ```
 
-Replace the placeholder values with your actual Clerk & LiveBlocks credentials. You can obtain these credentials by signing up on the [Clerk](https://clerk.com/) and [Liveblocks](liveblocks.io/) website.
+Replace the placeholder values with your actual Clerk (go to Clerk, sign up and then create a form for login and in Settings get you "API KEYS") & LiveBlocks (go to LiveBlocks, sign up and then create a form for login and in Settings get you "API KEYS")  credentials. 
+You can obtain these credentials by signing up on the [Clerk](https://clerk.com/) and [Liveblocks](https://liveblocks.io/) website.
+
 
 **Running the Project**
 
@@ -1201,11 +1203,3 @@ export const Notifications = () => {
 - Public assets used in the project can be found [here](https://drive.google.com/file/d/1MCQaP-imgDdopwcUn4CN_D-WglDc--Ho/view?usp=sharing)
 - [Liveblocks Starter Guide](https://liveblocks.io/docs/get-started/nextjs-lexical)
 
-## <a name="more">🚀 More</a>
-**Advance your skills with Next.js Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning experience. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
-<img src="https://i.ibb.co/804sPK6/Image-720.png" alt="Project Banner">
-</a>
